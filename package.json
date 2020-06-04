@@ -1,0 +1,27 @@
+{
+  "name": "banana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html",
+		"start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebBabin/banana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebBabin/banana/issues"
+  },
+  "homepage": "https://github.com/CalebBabin/banana#readme",
+  "dependencies": {
+    "js": "^0.1.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.7",
+    "tmi.js": "^1.5.0"
+  }
+}

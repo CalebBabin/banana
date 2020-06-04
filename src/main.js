@@ -19,13 +19,22 @@ for (let index = 0; index < sound_sources.length; index++) {
 	sounds.push(new Audio(element));
 }
 
+let channels = ['antimattertape'];
+const query_vars = {};
+const query_parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+	query_vars[key] = value;
+});
+if (query_vars.channels) {
+	channels = query_vars.channels.split(',');
+}
+
 const client = new tmi.Client({
 	options: { debug: false },
 	connection: {
 		reconnect: true,
 		secure: true
 	},
-	channels: ['antimattertape']
+	channels: channels,
 });
 client.connect();
 client.on('message', (channel, tags, message, self) => {

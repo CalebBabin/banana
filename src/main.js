@@ -28,12 +28,11 @@ if (query_vars.channels) {
 	channels = query_vars.channels.split(',');
 }
 
-if (query_vars.volume) {
+if (!query_vars.volume) query_vars.volume = 50;
 	for (let index = 0; index < sounds.length; index++) {
 		const element = sounds[index];
 		element.volume = Number(query_vars.volume)/100
 	}
-}
 
 const client = new tmi.Client({
 	options: { debug: false },

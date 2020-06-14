@@ -47,7 +47,8 @@ const canvas = document.createElement('canvas')
 const ctx = canvas.getContext('2d')
 
 const bananas = [];
-const bananaSize = 100;
+const default_bananaSize = 100;
+const bananaSize = query_vars.scale ? Number(query_vars.scale)*default_bananaSize || default_bananaSize : default_bananaSize;
 const bananaLifespan = 5;
 const bananaMinimumSpeed = 50;
 const bananaMaximumSpeed = 150;

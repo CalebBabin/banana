@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build src/index.html",
-		"start": "parcel src/index.html"
+    "start": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "dependencies": {
     "js": "^0.1.0",
     "parcel": "^1.12.4",
-    "sass": "^1.26.7",
+    "sass": "^1.26.8",
     "tmi.js": "^1.5.0"
   }
 }

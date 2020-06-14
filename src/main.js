@@ -97,8 +97,8 @@ window.requestAnimationFrame(draw);
 window.addEventListener('DOMContentLoaded', ()=>{
 	document.body.appendChild(canvas);
 	const resize = ()=>{
-		canvas.width = canvas.offsetWidth;
-		canvas.height = canvas.offsetHeight;
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
 	}
 	resize();
 	window.addEventListener('resize', resize);

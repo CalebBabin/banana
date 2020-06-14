@@ -12,6 +12,16 @@ const sound_sources = [
 	require('./recordings/5.mp3'),
 	require('./recordings/6.mp3'),
 	require('./recordings/7.mp3'),
+	require('./recordings/8.mp3'),
+	require('./recordings/9.mp3'),
+	require('./recordings/10.mp3'),
+	require('./recordings/11.mp3'),
+	require('./recordings/12.mp3'),
+	require('./recordings/13.mp3'),
+	require('./recordings/14.mp3'),
+	require('./recordings/15.mp3'),
+	require('./recordings/16.mp3'),
+	require('./recordings/17.mp3'),
 ]
 const sounds = [];
 for (let index = 0; index < sound_sources.length; index++) {
@@ -29,10 +39,10 @@ if (query_vars.channels) {
 }
 
 if (!query_vars.volume) query_vars.volume = 50;
-	for (let index = 0; index < sounds.length; index++) {
-		const element = sounds[index];
-		element.volume = Number(query_vars.volume)/100
-	}
+for (let index = 0; index < sounds.length; index++) {
+	const element = sounds[index];
+	element.volume = Number(query_vars.volume)/100
+}
 
 const client = new tmi.Client({
 	options: { debug: false },

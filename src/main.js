@@ -22,6 +22,9 @@ const sound_sources = [
 	require('./recordings/15.mp3'),
 	require('./recordings/16.mp3'),
 	require('./recordings/17.mp3'),
+	require('./recordings/18.mp3'),
+	require('./recordings/19.mp3'),
+	require('./recordings/20.mp3'),
 ]
 const sounds = [];
 for (let index = 0; index < sound_sources.length; index++) {
